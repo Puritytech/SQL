@@ -1,3 +1,5 @@
+--create women's fashion shop database
+
 /** women fashion:
 1, dress, 1, red, 100
 2, dress, 1, pink, 50
@@ -37,8 +39,12 @@ INSERT INTO WOMEN_FASHION VALUES (13,"SWEATER",5,"PINK",25);
 INSERT INTO WOMEN_FASHION VALUES (14,"SWEATER",5,"WHITE",10);
 INSERT INTO WOMEN_FASHION VALUES (15,"SOCKS",6,"BLACK",80);
 
+--display the database ordered by price.
+
 SELECT*FROM WOMEN_FASHION ORDER BY PRICE;
 
-SELECT*FROM WOMEN_FASHION WHERE AISLE >3 ORDER BY COLOUR;
+--what are the type of clothes in the shop that are priced above $70?
 
-SELECT SUM(PRICE) FROM WOMEN_FASHION;
+SELECT*FROM WOMEN_FASHION WHERE price>70 ORDER BY price;
+
+
